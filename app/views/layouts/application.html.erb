@@ -2,11 +2,18 @@
 <html>
 <head>
   <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'bootstrap/css/bootstrap' %>
+    <%= stylesheet_link_tag    'dist/css/AdminLTE' %>
+    <%= stylesheet_link_tag    'bootstrap/css/bootstrap' %>
+    
+      <%= stylesheet_link_tag    'iCheck/all.css' %>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <%= javascript_include_tag "plugins/jQuery/jQuery-2.1.4.min"%>
+    <%= javascript_include_tag "bootstrap/js/bootstrap.min"%>
+    <%= javascript_include_tag "plugins/iCheck/icheck.min" %>
+ 
 </head>
-<body>
+<body class="login-page">
 
 <%= yield %>
 
